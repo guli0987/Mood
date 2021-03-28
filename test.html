@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<!--<link rel="stylesheet" type="text/css" href="../css/app.css" />-->
+		<link href="dist/driver.min.css" rel="stylesheet">
+
+		<style>
+			.e{
+				
+			}
+			.some_panel{
+				text-align: center;
+				width: 40px;
+			}
+		</style>
+
+	</head>
+	
+	<body>
+		<br><br><br><br><br>
+		<div class="some_btn" id="some_btn">123</div>
+		<br><br><br><br><br>
+		<div class="e"><div class="some_panel" id="some_panel">456</div></div>
+		<br><br><br><br><br>
+		<div class="s" id="s">789</div>
+		<!-- <script src="js/jquery-3.3.1.min.js"></script> -->
+		<script src="dist/driver.min.js"></script>
+		
+		<script>
+			const driver = new Driver();
+			//driver.highlight('#s');
+			 /* driver.highlight({
+			  element: '#some_panel',
+			  popover: {
+			    title: 'Title for the Popover',
+			    description: 'Description for it',
+				position:"top"
+			  }
+			}); */
+
+			// 定义介绍的步骤
+			driver.defineSteps([
+			  {
+			    element: '.some_btn',
+			    popover: {
+			      className: 'first-step-popover-class',
+			      title: 'Title on Popover',
+			      description: 'Body of the popover',
+				  position:"top"
+			    }
+			  },
+			  {
+			    element: '.some_panel',
+			    popover: {
+			      title: 'Title on Popover',
+			      description: 'Body of the popover',
+				  position:"right"
+			    }
+			  },
+			  {
+			    element: '.s',
+			    popover: {
+			      title: 'Title on Popover',
+			      description: 'Body of the popover',
+				  position:"bottom"
+			    }
+			  },
+			]);
+			// Start the introduction
+			driver.start();
+			
+			
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,2340 @@
+/* Mobileshop style sheet */
+/* Licence and terms of use at product shop */
+/* All rights reserved by www.maxartkiller.com */
+/*===========================================*/
+/*============ Table of content =============
+1. basic
+2. colors
+3. background images
+4. pageloader
+5. opacity
+6. avatar
+7. icons
+8. notification
+9. footer
+10. sidebar
+11. tabs small
+12. modal
+13. swiper
+14. titles
+15. height
+16. width
+17. top margin
+18. absolute
+19. button
+20. scroll up btn
+21. logo
+22. header
+23. floatlabel
+24. cart count
+25. chat list
+26. pre code
+27. sidebar for colors
+28. rtl
+29. ui-rounded
+============================================*/
+/*==========================================*/
+/* line 1, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+html {
+  height: 100%;
+}
+
+/* line 5, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+body {
+  font-size: 14px;
+  line-height: 18px;
+  height: auto;
+  min-height: 100%;
+  background-color: #ffffff;
+}
+
+/* line 13, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.transition-05, .tabs-footer, .tabs-footer .nav-tabs .nav-item .nav-link.active:after, .sidebar, .sidebar .list-group .list-group-item i:last-child, .sidebar .list-group .list-group-item i.last, .main-container, .white-pagination .swiper-pagination-bullet, .scrollup, .btn.colorsettings, .sidebar-right-color {
+  transition: ease all 0.5s;
+  -webkit-transition: ease all 0.5s;
+  -moz-transition: ease all 0.5s;
+  -ms-transition: ease all 0.5s;
+}
+
+/* line 20, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.login-container {
+  min-height: 100vh;
+  padding: 0 15px;
+  height: auto;
+}
+
+/* line 26, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* line 30, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.material-icons {
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 1024px) {
+  /* line 35, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* colors */
+/* line 41, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.bg-default {
+  background-color: #122a73 !important;
+  color: #ffffff;
+}
+
+/* line 46, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.text-default {
+  color: #122a73;
+}
+
+/* line 50, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.bg-default-light {
+  background-color: rgba(212, 218, 235, 0.85) !important;
+  color: #000000;
+}
+
+/* line 55, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.bg-purple-light {
+  background-color: #C4C6D9;
+  color: #000000;
+}
+
+/* line 60, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.text-mute {
+  opacity: 0.75;
+}
+
+/* line 64, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.card,
+.bg-none {
+  background-color: transparent;
+}
+
+/* line 69, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.gradient-default {
+  background: #9b887a;
+  background: -moz-linear-gradient(45deg, #9b887a 0%, #eed4c1 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #9b887a), color-stop(100%, #eed4c1));
+  background: -webkit-linear-gradient(45deg, #9b887a 0%, #eed4c1 100%);
+  background: -o-linear-gradient(45deg, #9b887a 0%, #eed4c1 100%);
+  background: -ms-linear-gradient(45deg, #9b887a 0%, #eed4c1 100%);
+  background: linear-gradient(45deg, #9b887a 0%, #eed4c1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9b887a', endColorstr='#eed4c1', GradientType=1);
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+/* line 82, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.gradient-green {
+  background: #809b7a;
+  background: -moz-linear-gradient(45deg, #809b7a 0%, #d4eec1 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #809b7a), color-stop(100%, #d4eec1));
+  background: -webkit-linear-gradient(45deg, #809b7a 0%, #d4eec1 100%);
+  background: -o-linear-gradient(45deg, #809b7a 0%, #d4eec1 100%);
+  background: -ms-linear-gradient(45deg, #809b7a 0%, #d4eec1 100%);
+  background: linear-gradient(45deg, #809b7a 0%, #d4eec1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#809b7a', endColorstr='#d4eec1', GradientType=1);
+}
+
+/* line 93, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.gradient-yellow {
+  background: #e8b827;
+  background: -moz-linear-gradient(45deg, #e8b827 0%, #fff3d4 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #e8b827), color-stop(100%, #fff3d4));
+  background: -webkit-linear-gradient(45deg, #e8b827 0%, #fff3d4 100%);
+  background: -o-linear-gradient(45deg, #e8b827 0%, #fff3d4 100%);
+  background: -ms-linear-gradient(45deg, #e8b827 0%, #fff3d4 100%);
+  background: linear-gradient(45deg, #e8b827 0%, #fff3d4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e8b827', endColorstr='#fff3d4', GradientType=1);
+}
+
+/* line 105, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.gradient-blue {
+  background: #4592d6;
+  background: -moz-linear-gradient(45deg, #4592d6 0%, #d6e4ff 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #4592d6), color-stop(100%, #d6e4ff));
+  background: -webkit-linear-gradient(45deg, #4592d6 0%, #d6e4ff 100%);
+  background: -o-linear-gradient(45deg, #4592d6 0%, #d6e4ff 100%);
+  background: -ms-linear-gradient(45deg, #4592d6 0%, #d6e4ff 100%);
+  background: linear-gradient(45deg, #4592d6 0%, #d6e4ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4592d6', endColorstr='#d6e4ff', GradientType=1);
+}
+
+/* line 116, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.bg-dark-blue {
+  background-color: #122a73;
+}
+
+/* line 120, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.bg-dark-purple {
+  background-color: #491879;
+}
+
+/* line 124, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.bg-maroon {
+  background-color: #ad162b;
+}
+
+/* line 128, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.bg-dark-gray {
+  background-color: #475861;
+}
+
+/* line 132, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.bg-dark-pink {
+  background-color: #e92063;
+}
+
+/* line 136, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.bg-dark-brown {
+  background-color: #795448;
+}
+
+/* line 140, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.bg-dark-green {
+  background-color: #009688;
+}
+
+/* line 144, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.bg-red {
+  background-color: #f94620;
+}
+
+/* line 148, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.bg-pink {
+  background-color: #e91e63;
+}
+
+/* line 152, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.bg-purple {
+  background-color: #6121d2;
+}
+
+/* line 156, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.bg-blue {
+  background-color: #143be0;
+}
+
+/* line 160, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.bg-teal {
+  background-color: #00bcd4;
+}
+
+/* line 164, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.bg-skyblue {
+  background-color: #0faff7;
+}
+
+/* line 168, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.bg-amber {
+  background-color: #ffc107;
+}
+
+/* line 172, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.bg-gray {
+  background-color: #607d8b;
+}
+
+/* line 176, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.bg-white {
+  color: #333333 !important;
+}
+
+/* line 180, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.bg-slate {
+  background-color: #22262b;
+  color: #ffffff;
+}
+
+/* line 184, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.alert-success {
+  color: #155724;
+  background-color: #d4edda !important;
+}
+
+/* background */
+/* line 189, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.has-background {
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+
+/* line 195, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 208, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.background > img {
+  display: none;
+}
+
+/* line 212, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.background + * {
+  position: relative;
+  z-index: 1;
+}
+
+/* pageloader */
+/* line 219, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.pageloader {
+  background-color: rgba(18, 42, 115, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  -ms-backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  text-align: center;
+}
+
+/* opacity */
+/* line 233, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.opacity-10 {
+  opacity: 0.1;
+}
+
+/* line 237, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.opacity-20 {
+  opacity: 0.2;
+}
+
+/* line 241, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.opacity-30 {
+  opacity: 0.3;
+}
+
+/* line 245, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.opacity-40 {
+  opacity: 0.4;
+}
+
+/* line 249, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.opacity-50 {
+  opacity: 0.5;
+}
+
+/* line 253, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.opacity-60 {
+  opacity: 0.6;
+}
+
+/* line 257, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.opacity-70 {
+  opacity: 0.7;
+}
+
+/* line 261, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.opacity-80 {
+  opacity: 0.8;
+}
+
+/* line 265, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.opacity-90 {
+  opacity: 0.9;
+}
+
+/* avatar */
+/* line 270, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.avatar {
+  border-radius: 4px;
+  overflow: hidden;
+  display: block;
+  vertical-align: middle;
+}
+
+/* line 276, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.avatar.avatar-200 {
+  height: 200px;
+  width: 200px;
+  line-height: 200px;
+}
+
+/* line 282, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.avatar.avatar-180 {
+  height: 180px;
+  width: 180px;
+  line-height: 180px;
+}
+
+/* line 288, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.avatar.avatar-100 {
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+}
+
+/* line 294, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.avatar.avatar-160 {
+  height: 160px;
+  width: 160px;
+  line-height: 160px;
+}
+
+/* line 300, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.avatar.avatar-150 {
+  height: 150px;
+  width: 150px;
+  line-height: 150px;
+}
+
+/* line 306, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.avatar.avatar-140 {
+  height: 140px;
+  width: 140px;
+  line-height: 140px;
+}
+
+/* line 312, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.avatar.avatar-120 {
+  height: 120px;
+  width: 120px;
+  line-height: 120px;
+}
+
+/* line 318, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.avatar.avatar-100 {
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+}
+
+/* line 324, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.avatar.avatar-80 {
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
+}
+
+/* line 330, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.avatar.avatar-60 {
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+}
+
+/* line 336, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.avatar.avatar-40 {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+}
+
+/* line 342, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.avatar.avatar-20 {
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+}
+
+/* line 348, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.avatar.avatar-10 {
+  height: 10px;
+  width: 10px;
+  line-height: 10px;
+}
+
+/* icons */
+/* line 356, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.icon {
+  border-radius: 4px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* line 364, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.icon i,
+.icon span {
+  vertical-align: middle;
+  margin-top: -2px;
+  position: relative;
+}
+
+/* line 371, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.icon.icon-200 {
+  height: 200px;
+  width: 200px;
+  line-height: 200px;
+}
+
+/* line 377, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.icon.icon-180 {
+  height: 180px;
+  width: 180px;
+  line-height: 180px;
+}
+
+/* line 383, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.icon.icon-100 {
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+}
+
+/* line 389, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.icon.icon-160 {
+  height: 160px;
+  width: 160px;
+  line-height: 160px;
+}
+
+/* line 395, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.icon.icon-140 {
+  height: 140px;
+  width: 140px;
+  line-height: 140px;
+}
+
+/* line 401, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.icon.icon-120 {
+  height: 120px;
+  width: 120px;
+  line-height: 120px;
+}
+
+/* line 407, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.icon.icon-100 {
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+}
+
+/* line 413, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.icon.icon-80 {
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
+}
+
+/* line 419, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.icon.icon-60 {
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+}
+
+/* line 425, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.icon.icon-50 {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+}
+
+/* line 431, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.icon.icon-40 {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+}
+
+/* line 437, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.icon.icon-30 {
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+}
+
+/* line 443, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.icon.icon-20 {
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+}
+
+/* line 449, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.icon.icon-10 {
+  height: 10px;
+  width: 10px;
+  line-height: 10px;
+}
+
+/* notification */
+/* line 457, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.notification-point {
+  height: 6px;
+  width: 6px;
+  border-radius: 3px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #F2697B;
+}
+
+/* footer */
+/* line 468, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.fixed-footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 30px;
+  padding-bottom: calc(env(safe-area-inset-bottom) + 30px);
+  z-index: 1;
+}
+
+/* line 477, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.tabs-footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 9;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  -ms-backdrop-filter: blur(10px);
+  color: #000000;
+  transition-delay: 0.5s;
+  -webkit-transition-delay: 0.5s;
+  -moz-transition-delay: 0.5s;
+  -ms-transition-delay: 0.5s;
+}
+
+/* line 494, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.tabs-footer:before {
+  content: "";
+  width: 100%;
+  display: block;
+  border-radius: 0px;
+  height: 15px;
+  position: absolute;
+  top: -15px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  opacity: 0.1;
+  background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+}
+
+/* line 511, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.tabs-footer .nav-tabs {
+  border: 0;
+}
+
+/* line 514, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.tabs-footer .nav-tabs .nav-item {
+  border: 0;
+}
+
+/* line 517, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.tabs-footer .nav-tabs .nav-item .nav-link {
+  border: 0;
+  color: rgba(0, 0, 0, 0.3);
+  padding: 0.94rem 1rem;
+  position: relative;
+  background-color: transparent;
+}
+
+/* line 524, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.tabs-footer .nav-tabs .nav-item .nav-link:after {
+  content: "";
+  width: 90%;
+  display: block;
+  border-radius: 2px;
+  height: 3px;
+  background-color: #122a73;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  opacity: 0;
+}
+
+/* line 539, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.tabs-footer .nav-tabs .nav-item .nav-link.active {
+  color: #122a73;
+  background-color: transparent;
+}
+
+/* line 543, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.tabs-footer .nav-tabs .nav-item .nav-link.active:after {
+  opacity: 1;
+}
+
+/* sidebar */
+/* line 554, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar {
+  width: 270px;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  overflow-y: auto;
+  display: block;
+  z-index: 10;
+  padding-bottom: calc(env(safe-area-inset-bottom) + 30px);
+  padding-top: calc(env(safe-area-inset-top) + 30px);
+}
+
+/* line 567, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar.sidebar-left {
+  left: -285px;
+}
+
+/* line 570, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar.sidebar-left.active {
+  left: 0;
+}
+
+/* line 576, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar .list-group {
+  width: 100%;
+}
+
+/* line 579, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar .list-group .list-group-item {
+  border: 0;
+  color: rgba(0, 0, 0, 0.4);
+  background: none;
+}
+
+/* line 584, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar .list-group .list-group-item i {
+  font-style: normal;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+/* line 589, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar .list-group .list-group-item i:last-child, .sidebar .list-group .list-group-item i.last {
+  margin-right: 0;
+  margin-left: 15px;
+  opacity: 0.5;
+}
+
+/* line 598, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar .list-group .list-group-item .list-group {
+  margin-top: 5px;
+}
+
+/* line 601, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar .list-group .list-group-item .list-group .list-group-item {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 607, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar .list-group .list-group-item.active {
+  opacity: 1;
+  background: none;
+  color: #000000;
+}
+
+/* line 613, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar .list-group .list-group-item:focus {
+  outline: none;
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* line 620, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar .list-group .list-group-item.multilevel .multilevel-link {
+  display: block;
+}
+
+/* line 625, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar .list-group .list-group-item.multilevel.active .last {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+}
+
+/* line 633, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar .list-group .list-group-item.multilevel .multilevel-dropdown {
+  display: none;
+}
+
+/* line 643, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar.active + .main-container {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+}
+
+/* line 651, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar.overlay-sidebar {
+  box-shadow: 3px 0px 15px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 3px 0px 15px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 3px 0px 15px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 3px 0px 15px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  -ms-backdrop-filter: blur(10px);
+}
+
+/* line 663, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar.overlay-sidebar.active + .main-container {
+  height: 100%;
+  height: 100vh;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+}
+
+/* line 675, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar.reveal-sidebar.active {
+  top: 0;
+}
+
+/* line 678, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar.reveal-sidebar.active + .main-container {
+  width: 100%;
+  height: 100%;
+  margin-left: 280px;
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* line 695, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar.iconic-sidebar {
+  width: 80px;
+  left: -95px;
+}
+
+/* line 699, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar.iconic-sidebar .username {
+  height: 40px;
+  width: 40px;
+}
+
+/* line 704, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar.iconic-sidebar .username-text,
+.sidebar.iconic-sidebar .text-link,
+.sidebar.iconic-sidebar .last {
+  display: none;
+}
+
+/* line 711, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar.iconic-sidebar .list-group .list-group-item {
+  text-align: center;
+}
+
+/* line 714, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar.iconic-sidebar .list-group .list-group-item i {
+  margin: 0 auto;
+}
+
+/* line 720, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar.iconic-sidebar.active {
+  left: 0px;
+  top: 0;
+}
+
+/* line 724, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar.iconic-sidebar.active + .main-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin-left: 80px;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* line 742, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar.sidebar-right {
+  right: -285px;
+}
+
+/* line 745, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar.sidebar-right.active {
+  right: 0;
+}
+
+/* line 754, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.reveal-background:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  -moz-backdrop-filter: blur(15px);
+  -ms-backdrop-filter: blur(15px);
+}
+
+/* line 770, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar-fill .sidebar {
+  background: rgba(18, 42, 115, 0.85);
+  color: #ffffff;
+}
+
+/* line 775, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar-fill .sidebar .list-group .list-group-item {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* line 778, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar-fill .sidebar .list-group .list-group-item.active {
+  color: #ffffff;
+}
+
+/* line 784, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar-fill .sidebar.reveal-sidebar {
+  background-color: transparent;
+}
+
+/* line 789, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar-fill .reveal-background:after {
+  background: rgba(18, 42, 115, 0.7);
+  color: #ffffff;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  -ms-backdrop-filter: blur(10px);
+}
+
+/* line 799, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.main-container {
+  width: 100%;
+  margin-left: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+  min-height: 100%;
+  min-height: 100vh;
+  z-index: 1;
+  position: relative;
+}
+
+/* line 814, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.main-container.active .tabs-footer {
+  transition-delay: 0.0s;
+  -webkit-transition-delay: 0.0s;
+  -moz-transition-delay: 0.0s;
+  -ms-transition-delay: 0.0s;
+  bottom: -200px;
+}
+
+/* line 824, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar-left-open,
+.sidebar-right-open {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* tabs small */
+/* line 833, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.tabs-small .nav-item .nav-link {
+  display: block;
+  padding: 5px 10px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* line 838, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.tabs-small .nav-item .nav-link.active {
+  color: #122a73;
+  background-color: transparent;
+}
+
+/* modal  */
+/* line 847, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.modal-content {
+  border: 0;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  -ms-backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* line 859, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.modal-content .modal-body {
+  padding: 30px 15px;
+}
+
+/* line 864, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.modal-backdrop.show {
+  opacity: .15;
+}
+
+/* line 868, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.modal-sm {
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* swiper */
+/* line 875, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.swiper-button-disabled {
+  opacity: 0.5;
+}
+
+/* line 879, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.swiper-pagination-intro {
+  position: relative;
+  margin: 0;
+  top: 6px;
+}
+
+/* line 886, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.white-pagination .swiper-pagination-bullet {
+  opacity: 0.4;
+  background-color: #ffffff;
+  margin: 0 2px;
+  border-radius: 4px;
+  height: 6px;
+  width: 6px;
+}
+
+/* line 895, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.white-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 16px;
+  opacity: 1;
+}
+
+/* line 903, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.offerslidetab1 .swiper-slide {
+  width: 310px;
+  padding: 0 5px 0 15px;
+}
+
+/* line 908, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.offerslidetab1 .swiper-pagination {
+  padding-left: 35px;
+  width: auto;
+}
+
+/* line 916, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.offerslide2tab1 .swiper-slide,
+.offerslide2tab2 .swiper-slide {
+  width: 310px;
+  padding: 0 5px 0 15px;
+}
+
+/* line 921, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.offerslide2tab1 .swiper-pagination,
+.offerslide2tab2 .swiper-pagination {
+  padding-left: 35px;
+  width: auto;
+}
+
+/* line 928, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.categoriestab1 .swiper-slide {
+  width: auto;
+  padding: 0 5px 0 15px;
+}
+
+/* line 936, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.categories2tab1 .swiper-slide,
+.categories2tab2 .swiper-slide {
+  width: auto;
+}
+
+/* line 941, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.gallery-top {
+  height: 350px;
+  width: 100%;
+}
+
+/* line 946, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.gallery-thumbs {
+  height: 100px;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+/* line 951, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.gallery-thumbs .swiper-slide {
+  width: 100px;
+  opacity: 0.4;
+}
+
+/* line 955, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.gallery-thumbs .swiper-slide.swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+/* Titles */
+/* line 962, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.page-title {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/* height  */
+/* line 969, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.h-100px {
+  height: 100px;
+}
+
+/* line 973, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.h-150px {
+  height: 150px;
+}
+
+/* line 977, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.h-200px {
+  height: 200px;
+}
+
+/* width  */
+/* line 982, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.w-100px {
+  width: 100px;
+}
+
+/* line 986, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.w-150px {
+  width: 150px;
+}
+
+/* line 990, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.w-200px {
+  width: 200px;
+}
+
+/* line 994, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.w-250px {
+  width: 250px;
+}
+
+/* line 998, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.w-300px {
+  width: 300px;
+}
+
+/* top margins */
+/* line 1003, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.top-75 {
+  margin-top: -75px;
+}
+
+/* absolute position */
+/* line 1008, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding-top: env(safe-area-inset-top);
+  line-height: 1rem;
+}
+
+/* line 1017, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.top-center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding-top: env(safe-area-inset-top);
+  line-height: 1rem;
+}
+
+/* line 1027, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  padding-top: env(safe-area-inset-top);
+  line-height: 1rem;
+}
+
+/* line 1036, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  padding-bottom: env(safe-area-inset-bottom);
+  line-height: 1rem;
+}
+
+/* line 1045, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.bottom-center {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding-bottom: env(safe-area-inset-bottom);
+  line-height: 1rem;
+}
+
+/* line 1055, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  padding-bottom: env(safe-area-inset-bottom);
+  line-height: 1rem;
+}
+
+/* button */
+/* line 1066, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.btn {
+  border: 0;
+}
+
+/* line 1069, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.btn i,
+.btn span {
+  vertical-align: middle;
+}
+
+/* line 1074, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* line 1080, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.btn-group-lg > .btn,
+.btn-lg {
+  padding: .565rem 1rem;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* line 1087, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.btn-group-sm > .btn,
+.btn-sm {
+  padding: 0.375rem .8rem;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+/* line 1093, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.btn-group-sm > .btn.btn-rounded,
+.btn-sm.btn-rounded {
+  width: 34px;
+  height: 34px;
+  text-align: center;
+  padding: 6px 0;
+}
+
+/* line 1099, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.btn-group-sm > .btn.btn-rounded i,
+.btn-sm.btn-rounded i {
+  font-size: 21px;
+  vertical-align: middle;
+  margin-top: -2px;
+}
+
+/* line 1107, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.btn-20 {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0;
+}
+
+/* line 1114, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.btn-20 i {
+  font-size: 14px;
+  vertical-align: middle;
+  margin-top: -2px;
+  height: 20px;
+  line-height: 20px;
+}
+
+/* line 1123, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.btn-40 {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  padding: 0;
+}
+
+/* line 1130, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.btn-40 i {
+  vertical-align: middle;
+  margin-top: -2px;
+}
+
+/* line 1136, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.btn-default, .selectoption input[type="checkbox"]:checked + label {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* line 1140, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.btn-default:focus, .selectoption input[type="checkbox"]:checked + label:focus, .btn-default:active, .selectoption input[type="checkbox"]:checked + label:active, .btn-default:hover, .selectoption input[type="checkbox"]:checked + label:hover, .btn-default.active, .selectoption input[type="checkbox"]:checked + label.active {
+  background-color: black;
+  color: #e6e6e6;
+}
+
+/* line 1149, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.btn-light {
+  background-color: #d4daeb;
+  color: #8e9ecb;
+}
+
+/* line 1153, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.btn-light:focus, .btn-light:active, .btn-light:hover, .btn-light.active {
+  background-color: #b1bcdb;
+  color: #4d64a6;
+}
+
+/* line 1162, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.btn-white {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* line 1166, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.btn-white:focus, .btn-white:active, .btn-white:hover {
+  background-color: #e6e6e6;
+  color: black;
+}
+
+/* line 1173, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.btn-white.active {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* line 1180, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.continue {
+  display: none;
+}
+
+/* scroll up */
+/* line 1185, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.scrollup {
+  opacity: 0;
+  display: none;
+  z-index: 12;
+  right: 15px;
+  bottom: 65px;
+  bottom: calc(65px + env(safe-area-inset-bottom));
+}
+
+/* line 1194, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.scrollup.active {
+  opacity: 1;
+  display: block;
+}
+
+/* line 1199, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.scrollup.atbottom {
+  bottom: 75px;
+}
+
+/* logo */
+/* line 1205, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.logo-landing {
+  max-width: 100px;
+  height: auto;
+}
+
+/* line 1210, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.logo-header {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 1214, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.logo-header .logo-img {
+  vertical-align: middle;
+  margin: 0;
+  max-width: 44px;
+  margin-right: 10px;
+}
+
+/* line 1221, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.logo-header .logo-header-text {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  font-size: 18px;
+  line-height: 16px;
+}
+
+/* line 1228, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.logo-header .logo-header-text small {
+  font-size: 9px;
+}
+
+/* header */
+/* line 1235, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.header {
+  padding: 10px 0px;
+  padding: calc(env(safe-area-inset-top) + 10px) env(safe-area-inset-right) 10px env(safe-area-inset-left);
+}
+
+/* line 1239, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.header.active {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  -ms-backdrop-filter: blur(10px);
+}
+
+/* line 1248, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.header .notification-point {
+  top: 10px;
+  right: 12px;
+}
+
+/* line 1253, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.header a,
+.header .btn-link {
+  color: #000000;
+}
+
+/* line 1262, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.header-fill .header {
+  background: rgba(18, 42, 115, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  -ms-backdrop-filter: blur(10px);
+  color: #ffffff;
+}
+
+/* line 1270, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.header-fill .header a,
+.header-fill .header .btn-link {
+  color: #ffffff;
+}
+
+/* line 1275, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.header-fill .header .logo-img {
+  content: url("../../assets/img/logo-small-white.svg");
+}
+
+/* float label */
+/* line 1283, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* line 1286, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.form-group .form-control-label {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 1292, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.float-label {
+  padding-top: 15px;
+  position: relative;
+}
+
+/* line 1296, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.float-label .form-control-label {
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+  top: 22px;
+  margin: 0;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+  font-size: 15px;
+  transition: ease all 0.5s;
+  -webkit-transition: ease all 0.5s;
+  -ms-transition: ease all 0.5s;
+  -moz-transition: ease all 0.5s;
+  z-index: 0;
+}
+
+/* line 1315, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.float-label .form-control,
+.float-label .chosen-container .chosen-choices,
+.float-label .chosen-container .chosen-single {
+  background-color: transparent;
+  border-width: 0 0 1px 0;
+  border-radius: 0;
+  z-index: 1;
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  background-image: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* line 1331, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.float-label.active .form-control-label {
+  top: 0;
+  font-size: 11px;
+  line-height: 16px;
+}
+
+/* line 1338, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.float-label .form-control:focus {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  outline: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+/* line 1346, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.float-label .form-control:focus + .form-control-label {
+  opacity: 0.5;
+  top: 0;
+  font-size: 11px;
+  line-height: 16px;
+}
+
+/* line 1355, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.float-label.style-light .form-control-label {
+  color: #ffffff;
+}
+
+/* line 1359, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.float-label.style-light .form-control,
+.float-label.style-light .chosen-container .chosen-choices,
+.float-label.style-light .chosen-container .chosen-single {
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* line 1365, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.float-label.style-light .form-control::placeholder,
+.float-label.style-light .chosen-container .chosen-choices::placeholder,
+.float-label.style-light .chosen-container .chosen-single::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 1369, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.float-label.style-light .form-control:focus,
+.float-label.style-light .chosen-container .chosen-choices:focus,
+.float-label.style-light .chosen-container .chosen-single:focus {
+  border-bottom: 1px solid white;
+}
+
+/* line 1376, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.float-label.style-light.active .form-control,
+.float-label.style-light.active .chosen-container .chosen-choices,
+.float-label.style-light.active .chosen-container .chosen-single {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+/* cart count */
+/* line 1387, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.cart-count {
+  background-color: #d4daeb;
+  color: #000000;
+  border-radius: 5px;
+  padding: 2px;
+  width: 66px;
+}
+
+/* line 1396, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.cart-count .input-group-prepend .btn,
+.cart-count .input-group-append .btn {
+  height: 20px;
+  width: 20px;
+  line-height: 18px;
+  padding: 0;
+  border-radius: 4px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #e5e9f3;
+  color: #000000;
+}
+
+/* line 1409, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.cart-count .form-control {
+  padding: 0;
+  line-height: 20px;
+  height: 20px;
+  text-align: center;
+  max-width: 25px;
+  vertical-align: middle;
+  border-radius: 4px;
+  border: 0;
+  background: none;
+  font-size: 12px;
+}
+
+/* line 1422, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.cart-count.cart-count-lg {
+  width: 125px;
+}
+
+/* line 1427, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.cart-count.cart-count-lg .input-group-prepend .btn,
+.cart-count.cart-count-lg .input-group-append .btn {
+  height: 36px;
+  width: 36px;
+  line-height: 38px;
+}
+
+/* line 1434, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.cart-count.cart-count-lg .form-control {
+  line-height: 36px;
+  height: 36px;
+  max-width: 50px;
+  font-size: 18px;
+}
+
+/* chat list */
+/* line 1444, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.chat-list {
+  margin: 20px auto;
+}
+
+/* line 1447, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.chat-list .left-chat {
+  margin-bottom: 15px;
+}
+
+/* line 1450, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.chat-list .left-chat .chat-block {
+  padding: 15px;
+  border-radius: 4px 4px 4px 0px;
+  margin-right: 3px;
+  position: relative;
+  width: auto;
+  display: inline-block;
+  background-color: #193a9f;
+  color: #ffffff;
+}
+
+/* line 1460, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.chat-list .left-chat .chat-block:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -16px;
+  height: 8px;
+  width: 8px;
+  border-radius: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 10px;
+  z-index: 1;
+  border-top-color: #193a9f;
+  border-left-color: #193a9f;
+}
+
+/* line 1478, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.chat-list .right-chat {
+  margin-bottom: 15px;
+  text-align: right;
+}
+
+/* line 1482, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.chat-list .right-chat .chat-block {
+  text-align: left;
+  background: #ede9e9;
+  padding: 15px;
+  border-radius: 4px 4px 0px 4px;
+  margin-left: 3px;
+  position: relative;
+  color: #999999;
+  background-color: #d4daeb;
+  width: auto;
+  display: inline-block;
+}
+
+/* line 1494, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.chat-list .right-chat .chat-block:before {
+  content: "";
+  position: absolute;
+  right: 0px;
+  bottom: -16px;
+  height: 8px;
+  width: 8px;
+  border-radius: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 10px;
+  border-right-color: #d4daeb;
+  border-top-color: #d4daeb;
+  z-index: 1;
+}
+
+/* pre code style */
+/* line 1515, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+pre {
+  background-color: rgba(132, 195, 255, 0.2);
+  color: #84C3FF;
+}
+
+/* sidebar colors */
+/* line 1521, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.btn.colorsettings {
+  position: fixed;
+  top: 50%;
+  margin-top: -20px;
+  bottom: auto;
+  right: -15px;
+  border-radius: 20px 0 0 20px !important;
+  padding: 2px 15px 2px 5px;
+  z-index: 10;
+}
+
+/* line 1532, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.btn.colorsettings span {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  animation: rotation 2s infinite linear;
+  -moz-animation: rotation 2s infinite linear;
+  -ms-animation: rotation 2s infinite linear;
+  -webkit-animation: rotation 2s infinite linear;
+}
+
+/* line 1542, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.btn.colorsettings.active {
+  right: 175px;
+  border-radius: 20px 0 0 20px;
+}
+
+/* line 1548, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar-right-color {
+  width: 180px;
+  position: fixed;
+  right: -215px;
+  top: 50%;
+  margin-top: -175px;
+  bottom: 0;
+  height: 340px;
+  overflow-y: auto;
+  z-index: 9999;
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 15px 0 0 15px;
+}
+
+/* line 1567, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.sidebar-right-color.active {
+  right: 0;
+}
+
+/* Color select */
+/* line 1574, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.colorselect,
+.colorselect2 {
+  margin: 0 1px 1px 0;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 4px solid transparent;
+}
+
+/* line 1584, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.colorselect input[type="radio"],
+.colorselect2 input[type="radio"] {
+  display: none;
+}
+
+/* line 1587, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.colorselect input[type="radio"] + label,
+.colorselect2 input[type="radio"] + label {
+  display: block;
+  height: 34px;
+  line-height: 34px;
+  width: 34px;
+  color: #ffffff;
+  margin-bottom: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 4px solid rgba(255, 255, 255, 0);
+}
+
+/* line 1598, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.colorselect input[type="radio"] + label i,
+.colorselect2 input[type="radio"] + label i {
+  font-size: 16px;
+  display: none;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  background-color: green;
+  vertical-align: middle;
+}
+
+/* line 1612, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.colorselect input[type="radio"]:checked + label,
+.colorselect2 input[type="radio"]:checked + label {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+/* line 1615, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.colorselect input[type="radio"]:checked + label i,
+.colorselect2 input[type="radio"]:checked + label i {
+  display: inline-block;
+}
+
+/* line 1622, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.colorselect.active,
+.colorselect2.active {
+  position: relative;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+}
+
+/* line 1629, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.selectoption {
+  margin: 0 5px 5px 0;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  font-size: 8px;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+/* line 1641, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.selectoption input[type="checkbox"] {
+  display: none;
+}
+
+/* line 1644, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.selectoption input[type="checkbox"] + label {
+  display: block;
+  height: 30px;
+  line-height: 24px;
+  width: 30px;
+  color: #666666;
+  margin-bottom: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 3px solid rgba(255, 255, 255, 0);
+}
+
+/* line 1657, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.selectoption input[type="checkbox"]:checked + label {
+  color: #ffffff;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+/* line 1662, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.selectoption input[type="checkbox"]:checked + label i {
+  display: inline-block;
+}
+
+/* line 1669, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.selectoption.active {
+  position: relative;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@-moz-keyframes rotation {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -wemozbkit-transform: rotate(359deg);
+  }
+}
+
+@-ms-keyframes rotation {
+  /* line 1708, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  /* line 1712, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+  to {
+    -ms-transform: rotate(359deg);
+  }
+}
+
+/* RTL  */
+/* line 1718, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+/* line 1722, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl .float-right {
+  float: left !important;
+}
+
+/* line 1726, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl .text-left {
+  text-align: right !important;
+}
+
+/* line 1730, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl .text-right {
+  text-align: left !important;
+}
+
+/* line 1736, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl .swiper-wrapper .swiper-slide {
+  direction: rtl;
+}
+
+/* line 1741, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl .bottom-right {
+  left: 0px;
+  right: auto;
+}
+
+/* line 1746, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl .bottom-left {
+  right: 0px;
+  left: auto;
+}
+
+/* line 1751, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl .border-left {
+  border-left: 0 !important;
+  border-right: 1px solid #dee2e6 !important;
+}
+
+/* line 1756, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl .col.pl-0 {
+  padding-left: 15px !important;
+}
+
+/* line 1761, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl .pl-0 {
+  padding-right: 0 !important;
+}
+
+/* line 1765, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl .ml-0,
+.rtl .mx-0 {
+  margin-right: 0 !important;
+}
+
+/* line 1770, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl .pl-2,
+.rtl .px-2 {
+  padding-left: inherit !important;
+  padding-right: .5rem !important;
+}
+
+/* line 1776, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl .mr-auto {
+  margin-right: 0 !important;
+  margin-left: auto !important;
+}
+
+/* line 1781, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl .ml-auto {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+/* line 1786, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl .mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+/* line 1791, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl .mr-2,
+.rtl .mx-2 {
+  margin-left: .5rem !important;
+  margin-right: 0 !important;
+}
+
+/* line 1797, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl .mr-3,
+.rtl .mx-3 {
+  margin-right: 0 !important;
+  margin-left: 1rem !important;
+}
+
+/* line 1803, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl .ml-3,
+.rtl .mx-3 {
+  margin-left: 0 !important;
+  margin-right: 1rem !important;
+}
+
+/* line 1809, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl .mr-0,
+.rtl .mx-0 {
+  margin-left: 0 !important;
+}
+
+/* line 1816, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl .nav {
+  padding-right: 0;
+}
+
+/* line 1820, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl .offerslidetab1 .swiper-pagination {
+  padding-right: 25px;
+  left: auto;
+  right: 0;
+}
+
+/* line 1827, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl .sidebar.sidebar-left {
+  left: auto;
+  right: -285px;
+}
+
+/* line 1831, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl .sidebar.sidebar-left.active {
+  right: 0;
+  left: auto;
+}
+
+/* line 1838, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl .sidebar-right-color {
+  left: -215px;
+  right: auto;
+  border-radius: 0 15px 15px 0;
+}
+
+/* line 1843, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl .sidebar-right-color.active {
+  left: 0;
+  right: auto;
+}
+
+/* line 1849, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl .btn.colorsettings {
+  left: -15px;
+  right: auto;
+  border-radius: 0 20px 20px 0 !important;
+  padding: 2px 5px 2px 15px;
+}
+
+/* line 1855, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl .btn.colorsettings.active {
+  left: 175px;
+  border-radius: 0 20px 20px 0;
+}
+
+/* line 1861, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl .sidebar.reveal-sidebar.active + .main-container {
+  margin-left: 0;
+  margin-right: 280px;
+}
+
+/* line 1866, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl .sidebar.iconic-sidebar.active + .main-container {
+  margin-left: auto;
+  margin-right: 80px;
+}
+
+/* line 1871, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl .float-label .form-control-label {
+  left: auto;
+  right: 0;
+}
+
+/* line 1876, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl .sidebar.sidebar-right {
+  right: auto;
+  left: -285px;
+}
+
+/* line 1880, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.rtl .sidebar.sidebar-right.active {
+  left: 0;
+  right: auto;
+}
+
+/* ui-rounded */
+/* line 1890, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.ui-rounded .btn {
+  border-radius: 30px;
+}
+
+/* line 1894, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.ui-rounded .modal-content {
+  border-radius: 20px;
+}
+
+/* line 1899, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.ui-rounded .card {
+  border-radius: 10px;
+}
+
+/* line 1902, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.ui-rounded .card .card-header:first-child {
+  border-radius: 10px 10px 0 0;
+}
+
+/* line 1906, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.ui-rounded .card .card-footer:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+/* line 1911, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.ui-rounded .rounded {
+  border-radius: 10px !important;
+}
+
+/* line 1915, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.ui-rounded .avatar {
+  border-radius: 50%;
+}
+
+/* line 1919, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.ui-rounded .icon {
+  border-radius: 8px;
+}
+
+/* line 1923, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.ui-rounded .cart-count {
+  border-radius: 12px;
+}
+
+/* line 1928, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.ui-rounded .cart-count .input-group-prepend .btn,
+.ui-rounded .cart-count .input-group-append .btn {
+  border-radius: 10px;
+}
+
+/* line 1933, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.ui-rounded .cart-count.cart-count-lg {
+  border-radius: 22px;
+}
+
+/* line 1938, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+.ui-rounded .cart-count.cart-count-lg .input-group-prepend .btn,
+.ui-rounded .cart-count.cart-count-lg .input-group-append .btn {
+  border-radius: 22px;
+}
+
+/* line 1949, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+body.layout-dark {
+  background-color: #081231;
+  color: #ffffff;
+}
+
+/* line 1953, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+body.layout-dark .main-container {
+  background-color: #010205;
+  color: #ffffff;
+}
+
+/* line 1958, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+body.layout-dark .header {
+  color: #ffffff;
+}
+
+/* line 1961, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+body.layout-dark .header a,
+body.layout-dark .header .btn-link {
+  color: #ffffff;
+}
+
+/* line 1966, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+body.layout-dark .header .logo-img {
+  content: url("../../assets/img/logo-small-white.svg");
+}
+
+/* line 1971, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+body.layout-dark .tabs-small .nav-item .nav-link {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 1974, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+body.layout-dark .tabs-small .nav-item .nav-link.active {
+  color: #ffffff;
+}
+
+/* line 1979, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+body.layout-dark .sidebar {
+  background: rgba(18, 42, 115, 0.85);
+  color: #ffffff;
+}
+
+/* line 1984, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+body.layout-dark .sidebar .list-group .list-group-item {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* line 1987, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+body.layout-dark .sidebar .list-group .list-group-item.active {
+  color: #ffffff;
+}
+
+/* line 1993, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+body.layout-dark .sidebar.reveal-sidebar {
+  background-color: transparent;
+}
+
+/* line 1998, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+body.layout-dark .reveal-background:after {
+  background: rgba(18, 42, 115, 0.7);
+  color: #ffffff;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  -ms-backdrop-filter: blur(10px);
+}
+
+/* line 2007, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+body.layout-dark .list-group-item {
+  background-color: #0b1a47;
+  color: #ffffff;
+}
+
+/* line 2012, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+body.layout-dark .tabs-footer {
+  background-color: #0b1a47;
+  color: #ffffff;
+}
+
+/* line 2016, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+body.layout-dark .tabs-footer .nav-tabs .nav-item .nav-link {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 2019, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+body.layout-dark .tabs-footer .nav-tabs .nav-item .nav-link.active {
+  color: #ffffff;
+}
+
+/* line 2023, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+body.layout-dark .tabs-footer .nav-tabs .nav-item .nav-link:after {
+  background-color: #ffffff;
+}
+
+/* line 2029, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+body.layout-dark .modal-content {
+  background-color: rgba(18, 42, 115, 0.85);
+}
+
+/* line 2033, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+body.layout-dark .modal-backdrop.show {
+  opacity: .5;
+}
+
+/* line 2037, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+body.layout-dark .float-label .form-control,
+body.layout-dark .float-label .chosen-container .chosen-choices,
+body.layout-dark .float-label .chosen-container .chosen-single {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* line 2043, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+body.layout-dark .float-label .form-control::placeholder,
+body.layout-dark .float-label .chosen-container .chosen-choices::placeholder,
+body.layout-dark .float-label .chosen-container .chosen-single::placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+/* line 2048, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+body.layout-dark .float-label .form-control-label {
+  color: #ffffff;
+}
+
+/* line 2052, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+body.layout-dark .text-dark {
+  color: #ffffff !important;
+}
+
+/* line 2056, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+body.layout-dark .card,
+body.layout-dark .border,
+body.layout-dark .card-header,
+body.layout-dark .card-footer,
+body.layout-dark .border-bottom,
+body.layout-dark .border-top,
+body.layout-dark .border-left,
+body.layout-dark .border-right,
+body.layout-dark .list-group-item {
+  border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* line 2068, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+body.layout-dark .bg-light {
+  background-color: rgba(18, 42, 115, 0.85) !important;
+}
+
+/* line 2075, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+/* line 2080, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: rgba(18, 42, 115, 0.5);
+}
+
+/* line 2086, C:/wamp64/www/mobileux2.0/assets/scss/_custom.scss */
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background: #d4daeb;
+}
+
+/*# sourceMappingURL=../css/style-dark-blue.map */

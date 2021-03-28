@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="description" content="Mood 为心打造">
+    <meta name="Mood" content="互联网+">
+    <link rel=icon href="img/M-black.png" sizes="any">
+    
+    <title>Mood-为心打造</title>
+
+    <!-- material icons stylesheet -->
+    <link href="vendor/materializeicon/material-icons.css" rel="stylesheet">
+
+    <!-- bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://www.jq22.com/jquery/bootstrap-4.2.1.css">
+
+    <!-- swiper stylesheet -->
+    <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet">
+
+    <!-- template stylesheet -->
+    <link href="css/style.css" rel="stylesheet" id="style">
+	<!-- 新加 -->
+	<link rel="stylesheet" href="css/animate.css"/>
+	<link rel="stylesheet" href="css/download.css"/>
+	<style>
+		.p-color_qrcode{
+			color: #FFFFFF;
+		}
+	</style>
+</head>
+
+<body class="ui-rounded">
+    <div class="container-fluid h-100 pageloader">
+        <div class="row h-100">
+            <div class="col-12 align-self-center">
+                <figure class="mb-4 mx-auto">
+                    <img src="img/M.svg" alt="">
+                </figure>
+                <h2 class="text-uppercase font-weight-medium text-white">Mood</h2>
+                <p class="text-white text-mute">为心打造，为你而来</p>
+                <br>
+                <div class="spinner-border text-light" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+	<!-- 二维码 -->
+	<!-- page content starts -->
+	
+	<div class="has-background bg-default">
+		<header class="header">
+		    <div class="row no-gutters">
+		        <!-- <div class="col-auto">
+		            <button class="btn btn-link menu-btn-left"><i class="material-icons">menu</i></button>
+		        </div>
+		        <div class="col">
+		            <div class="logo-header">
+		                <img src="img/logo2.jpg" alt="" class="logo-img">
+		                <h5 class="logo-header-text"><span class="text-uppercase">Mood</span><br><small>为心打造</small></h5>
+		            </div>
+		        </div> -->
+		        <div class="col-auto top-right">
+		            <a href="#" class="btn btn-link"><!-- 消息 -->
+		               <span class="p-QRcode_down p-color_qrcode">二维码<img  src="img/QRcode2.png"/></span>
+		            </a>
+		        </div>
+				<!-- 弹窗层 -->
+				<div id="item-QRcode" class="download-item">
+					  <h4>Android下载二维码</h4>
+					  <span class="down-center"><img src="img/down.png" width="100%" height="100%"></span><br><br>
+					  <b class="item-close js-popup-close">x</b>
+				</div>
+		    </div>
+		</header>
+	    <figure class="background opacity-30">
+	        <img src="img/image3.jpg" alt="">
+	    </figure>
+	    <div class="login-container">
+	        <div class="row no-gutters">
+	            <div class="col-12 align-self-start">
+	
+	            </div>
+	            <div class="col-12 align-self-center">
+	                <div class="row justify-content-center">
+	                    <div class="col-11 col-sm-7 col-md-6 col-lg-5 col-xl-3 text-center">
+	                        <figure class="mb-4 mx-auto"><!-- logo-landing删去，影响居中 -->
+	                            <img src="img/M.svg" alt="">
+	                        </figure>
+	                        <h2 class="text-uppercase font-weight-medium">Mood</h2>
+	                        <p>产品下载专区</p>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-12 align-self-end mb-4 text-center">
+	                <div class="row">
+	                    <div class="col">
+	                        <a href="http://www.ziseyunjian.com/Mood/apk/mood.apk" class="btn btn-lg btn-default btn-block"><img src="img/android.png">  Android</a>
+	                    </div>
+	                    <div class="col">
+	                        <a href="#" class="btn btn-lg btn-white btn-block"><img src="img/apple.png"> IOS</a>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<!-- page content ends -->
+
+
+
+    <!-- Template js files -->
+    <script src="https://www.jq22.com/jquery/jquery-3.3.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="https://www.jq22.com/jquery/bootstrap-4.2.1.js"></script>
+
+    <!-- Swiper js -->
+    <script src="vendor/swiper/js/swiper.min.js"></script>
+    
+    <!-- Cookie for color scheme -->
+    <script src="vendor/cookie/jquery.cookie.js"></script>
+
+    <!-- Custom js -->
+    <script src="js/main.js"></script>
+
+    <!-- App js page level initialization functions -->
+    <script src="js/app.js"></script>
+	<!-- 新加 -->
+	<script src="js/jquery.popup.js"></script>
+	<script src="js/pyg-download.js"></script>
+	<script>
+		$(function(){		
+			$("body").downloadJS();  
+	  });
+	</script>
+</body>
+
+</html>

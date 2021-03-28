@@ -1,0 +1,274 @@
+body{
+	margin:0;
+	color:#6a6f8c;/* #6a6f8c */
+	/* background:#c8c8c8; *//* #c8c8c8 */
+	font:600 16px/18px 'Open Sans',sans-serif;
+}
+*,:after,:before{box-sizing:border-box}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+a{color:inherit;text-decoration:none;}
+input/* , button */{
+  outline: none;
+  border: none;
+}
+.login-wrap{
+	width:100%;
+	margin:auto;
+	max-width:1920px;
+	min-height:1080px;
+	position:relative;
+	background:url(../img/bg.jpg) no-repeat center;
+	background-size:100% auto;
+	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.login-html{
+	width:100%;
+	height:100%;
+	position:absolute;
+	padding:90px 70px 50px 70px;
+	background:rgba(40,57,101,.9);/* rgba(40,57,101,.9) */
+}
+.login-html .sign-in-htm,.login-html .sign-in2-htm,
+.login-html .sign-up-htm{/* 旋转动画 */
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	position:absolute;
+	-webkit-transform:rotateY(180deg);
+	        transform:rotateY(180deg);
+	-webkit-backface-visibility:hidden;
+	        backface-visibility:hidden;
+	-webkit-transition:all .4s linear;
+	        transition:all .4s linear;
+}
+
+.login-form .group .check{
+	display:none;
+}
+.login-html .two_select,
+.login-form .group .label/* ,
+.login-form .group .mindBtn */{
+	text-transform:uppercase;/* 定义只有大写字母 */
+}
+.login-html .two_select .tab{
+	font-size:22px;
+	margin-right:15px;
+	padding-bottom:5px;
+	margin:0 15px 10px 0;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+}
+.login-html .two_select .sign-active{/* 谁被选中就有sign-active类 */
+	font-size:;/* 不然字体不变色 */
+	color:#fff;
+	border-color:#1161ee;/* c */
+}
+.login-form{
+	min-height:345px;
+	position:relative;
+	-webkit-perspective:1000px;
+	        perspective:1000px;
+	-webkit-transform-style:preserve-3d;
+	        transform-style:preserve-3d;
+}
+.login-form .group{
+	margin-bottom:15px;
+}
+.login-form .group_yzm{/* add .group_yzm*/
+	margin-bottom:15px;
+}
+
+.login-form .group_yzm .input{
+	width:40%;
+	color:#fff;
+	border:none;
+	padding:12px 20px;
+	border-radius:25px;
+	background:rgba(255,255,255,.1);
+}
+/* .login-form .group_yzm .button{
+	width:30%;
+	color:#ffffff;
+	border:none;
+	padding:10px 20px;
+	border-radius:25px;
+	background:rgba(255,255,255,.1);
+} */
+/* .login-form .group_yzm .button{
+	margin-left: 10px;
+	background:#00aaff;
+} */
+.login-form .group .label,
+.login-form .group .input/* ,
+.login-form .group .button */{
+	width:100%;
+	color:#fff;
+	display:block;
+}
+.login-form .group .input/* ,
+.login-form .group .button */{
+	border:none;
+	padding:15px 20px;
+	border-radius:25px;
+	background:rgba(255,255,255,.1);
+}
+.login-form .group input[data-type="password"]{
+	text-security:circle;
+	-webkit-text-security:circle;
+}
+.login-form .group .label{
+	color:#dadada;
+	font-size:12px;
+}
+/* .login-form .group .button{
+	background:#1161ee;
+} */
+.mindBtn{/* 定义mui的按钮样式 */
+			padding:10px 20px;
+			border-radius:25px;
+		}
+.mind_code_btn{/* 定义注册按钮的按钮样式 */
+			padding:10px 5px;
+			border-radius:25px;
+			color: #ffffff;
+			font-size:xx-small;
+			border: 1px solid #1991FA;
+			background: #1991FA;
+			text-align:center;
+			width: auto;
+			height: auto;
+		}
+.mind_code_btn:active{/* 定义注册按钮点击效果的按钮样式 */
+	color: #ffffff;
+	border: 1px solid #1991FA;
+	background-color: #2d26fa  !important;
+}
+.login-form .group label .icon{
+	width:15px;
+	height:15px;
+	border-radius:2px;
+	position:relative;
+	display:inline-block;
+	background:rgba(255,255,255,.1);
+}
+.login-form .group label .icon:before,
+.login-form .group label .icon:after{
+	content:'';
+	width:10px;
+	height:2px;
+	background:#fff;
+	position:absolute;
+	-webkit-transition:all .2s ease-in-out 0s;
+	        transition:all .2s ease-in-out 0s;
+}
+.login-form .group label .icon:before{/* 复选框对勾 */
+	left:3px;
+	width:5px;
+	bottom:6px;
+	-webkit-transform:scale(0) rotate(0);
+	    -ms-transform:scale(0) rotate(0);
+	        transform:scale(0) rotate(0);
+}
+.login-form .group label .icon:after{
+	top:6px;
+	right:0;
+	-webkit-transform:scale(0) rotate(0);
+	    -ms-transform:scale(0) rotate(0);
+	        transform:scale(0) rotate(0);
+}
+.login-form .group .check:checked + label{/* 复选框文字 */
+	color:#fff;
+}
+.login-form .group .check:checked + label .icon{/* 复选框背景*/
+	background:#1161ee;
+}
+.login-form .group .check:checked + label .icon:before{/* 复选框图标*/
+	-webkit-transform:scale(1) rotate(45deg);
+	    -ms-transform:scale(1) rotate(45deg);
+	        transform:scale(1) rotate(45deg);
+}
+.login-form .group .check:checked + label .icon:after{
+	-webkit-transform:scale(1) rotate(-45deg);
+	    -ms-transform:scale(1) rotate(-45deg);
+	        transform:scale(1) rotate(-45deg);
+}
+
+/* .login-html .login-form .sign-in-htm .foot-lnk .table_switchLogin{
+	-webkit-transform:skew(90);
+	    -ms-transform:rotate(90);
+	        transform:rotate(90);
+} */
+/* .login-html .login-form .switchLogin .sign-in-htm{
+	-webkit-transform:rotate(0);
+	    -ms-transform:rotate(0);
+	        transform:rotate(0);
+}
+*/
+
+.login-html .login-form .sign-active .sign-in-htm{
+	-webkit-transform:rotate(0);
+	    -ms-transform:rotate(0);
+	        transform:rotate(0);
+}
+.login-html .login-form .sign-active .sign-up-htm{
+	-webkit-transform:rotate(0);
+	    -ms-transform:rotate(0);
+	        transform:rotate(0);
+}
+.login-html .login-form .sign-active .sign-in2-htm{
+	-webkit-transform:rotate(0);
+	    -ms-transform:rotate(0);
+	        transform:rotate(0);
+}
+
+.hr{
+	height:2px;
+	margin:60px 0 50px 0;
+	background:rgba(255,255,255,.2);
+}
+.hr2{
+	height:2px;
+	margin:20px 0 20px 0;
+	background:rgba(255,255,255,.2);
+}
+.foot-lnk{
+	text-align:center;
+}
+.foot-lnk2{
+	text-align:center;
+}
+.switch-login{
+	padding-top: 10px;
+	text-align:center;
+}
+.login-html .ul_sex .tab_sex{
+	font-size:18x;
+	padding-bottom:5px;
+	margin:0 15px -10px 0;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+}
+.login-html .ul_sex .sex_active{/* 谁被选中就有sign-active类 */
+	font-size:;/* 不然字体不变色 */
+	color:#fff;
+	font-style: italic;
+}
+#group_born input{
+	width:18%;
+	margin: 5px 0 0 10px;
+	color:#fff;
+	border:none;
+	border-radius:25px;
+	background:rgba(255,255,255,.1);
+}
+#group_born input[id='re_born_year']{
+	width:25%;
+	margin: 5px 0 0 10px;
+	color:#fff;
+	border:none;
+	border-radius:25px;
+	background:rgba(255,255,255,.1);
+}
+
